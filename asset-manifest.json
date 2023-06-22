@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.95ed517e.css",
-    "main.js": "/static/js/main.362af206.js",
+    "main.css": "/static/css/main.4c6e2271.css",
+    "main.js": "/static/js/main.159d42bf.js",
     "static/js/787.80dcc00f.chunk.js": "/static/js/787.80dcc00f.chunk.js",
+    "static/media/Specialized.png": "/static/media/Specialized.9bde43ba1150acab1fcd.png",
+    "static/media/TATA1MG.png": "/static/media/TATA1MG.ab87a1d63d007e2ee4ef.png",
     "static/media/React.png": "/static/media/React.2f2532db663fd5ec5f95.png",
     "static/media/Postman.png": "/static/media/Postman.7fedeaff79947348538e.png",
+    "static/media/Skinstore.png": "/static/media/Skinstore.9972af6e5283b13ffa9d.png",
+    "static/media/Portfolio.png": "/static/media/Portfolio.6f98bab9aa4bd9c333a5.png",
     "static/media/Netlify.png": "/static/media/Netlify.ccce58847f997c473352.png",
     "static/media/Profile.jpg": "/static/media/Profile.2aab644f51057e7faa2c.jpg",
+    "static/media/Live.png": "/static/media/Live.cc3393a2bc864195166a.png",
     "static/media/Phone.png": "/static/media/Phone.b0ba0642f727ee3df5c8.png",
     "static/media/Email.png": "/static/media/Email.c6398b0af8e86454760d.png",
     "static/media/HTML.png": "/static/media/HTML.f3aa7827cd5160f3fc1c.png",
@@ -19,12 +24,12 @@
     "static/media/ExpressJs.png": "/static/media/ExpressJs.39a0f4c3d981885c64f8.png",
     "static/media/Vscode.png": "/static/media/Vscode.c10cf3d205c846858641.png",
     "index.html": "/index.html",
-    "main.95ed517e.css.map": "/static/css/main.95ed517e.css.map",
-    "main.362af206.js.map": "/static/js/main.362af206.js.map",
+    "main.4c6e2271.css.map": "/static/css/main.4c6e2271.css.map",
+    "main.159d42bf.js.map": "/static/js/main.159d42bf.js.map",
     "787.80dcc00f.chunk.js.map": "/static/js/787.80dcc00f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95ed517e.css",
-    "static/js/main.362af206.js"
+    "static/css/main.4c6e2271.css",
+    "static/js/main.159d42bf.js"
   ]
 }
