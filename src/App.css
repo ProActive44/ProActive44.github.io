@@ -1,38 +1,441 @@
 .App {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(38, 38, 38);
+  color: aliceblue;
+  /* height: 1000vh; */
+  padding-bottom: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #e0eff8;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.favicon {
+  border-radius: 50%;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 40px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.nav-link:hover:not(.resume) {
+  color: rgb(253, 99, 99);
+}
+
+.menu-btn {
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+#download {
+  position: absolute;
+}
+
+#home {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+#home .max-width {
+  /* margin: auto 0px auto 90px; */
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* all similar styling */
+section {
+  padding: 40px 0;
+  padding-bottom: 300px;
+  /* border: 1px solid green; */
+}
+.about,
+.skills,
+.contact,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.serv-content,
+.skills .skills-content,
+.contact,
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* about section styling */
+
+/* Skills Section Styling */
+
+.skills-card {
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 130px;
+  padding: 8px;
+  /* border: 1px solid red; */
+}
+
+.skills-box {
+  /* width: 30%; */
+
+  min-width: 200px;
+  /* border: 1px solid gold; */
+}
+.skills-box .flex {
+  gap: 15px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skills-card-img {
+  width: 100%;
+}
+.skills-card:hover {
+  cursor: pointer;
+  margin-top: -10px;
+  background-color: white;
+  color: #000;
+  border-radius: 20px 20px 5px 5px;
+}
+
+/* Project css */
+
+.skills-card-Project {
+  transition: all 0.3s ease;
+  width: 55px;
+  height: 70px;
+  padding: 3px;
+  font-size: xx-small;
+  /* border: 1px solid red; */
+}
+
+.skills-card-Project:hover {
+  cursor: pointer;
+  margin-top: -5px;
+  background-color: white;
+  color: #000;
+  border-radius: 10px 10px 5px 5px;
+}
+
+/* contact section styling */
+#contact-github,
+#contact-linkedin,
+#contact-phone,
+#contact-email,
+#contact-location {
+  width: 260px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+
+#contact-github:hover,
+#contact-linkedin:hover,
+#contact-phone:hover,
+#contact-email:hover,
+#contact-location:hover {
+  background-color: rgb(190, 181, 181);
+  color: rgb(238, 73, 73);
+}
+
+#contact-github img,
+#contact-linkedin img,
+#contact-phone img,
+#contact-email img,
+#contact-location img {
+  width: 60px;
+  margin: auto;
+}
+
+/* CSS for scroll to top button */
+
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(231, 142, 40);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: rgb(252, 252, 252);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#btnScrollToTop:active,
+#btnScrollToTop:hover {
+  background: rgb(233, 177, 24);
+  box-shadow: 0px 0px 20px black;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  top: 0;
+  position: absolute;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 4px;
+  background: rgb(197, 192, 245);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(197, 192, 245);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(87, 142, 84);
+}
+
+/* response media query starts */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar .menu li a {
+    font-size: 18px;
+    margin-left: 22px;
+  }
+}
+@media (max-width: 1104px) {
+  .navbar .logo a {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+  .navbar .menu li a {
+    font-size: 15px;
+    margin-left: 21px;
+  }
+  .home .home-content .text-3 {
+    font-size: 34px;
+  }
+  .home .home-content .text-3 span {
+    font-size: 34px;
+  }
+  .home .passport {
+    width: 15%;
+  }
+}
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .navbar .menu li a {
+    font-size: 15px;
+    margin-left: 22px;
+  }
+  .home .home-content .text-3 {
+    font-size: 30px;
+  }
+  .home .home-content .text-3 span {
+    font-size: 30px;
+  }
+  .home .passport {
+    width: 15%;
+  }
+}
+@media (max-width: 948px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active {
+    visibility: hidden;
+  }
+  .menu-btn i.active::before {
+    visibility: visible;
+    position: absolute;
+    content: "\e5cd";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 40px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 30px;
+  }
+  .home .home-content .text-3 span {
+    font-size: 30px;
+  }
+  .home .passport {
+    margin-left: 50px;
+    padding-top: 220px;
+    width: 20%;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .projects .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 25px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 40px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 25px;
+  }
+  .home .home-content .text-3 span {
+    font-size: 25px;
+  }
+  .home .passport {
+    margin-left: 50px;
+    padding-top: 220px;
+    width: 20%;
+  }
+  .projects .serv-content .card,
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+  }
+  #contact-info {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .home .home-content .text-1 {
+    font-size: 20px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 30px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 20px;
+  }
+  .home .home-content .text-3 span {
+    font-size: 20px;
+  }
+  .home .passport {
+    margin-left: 30px;
+    padding-top: 230px;
+    width: 25%;
+  }
+  #contact-info {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  .serv-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home .passport {
+    margin-left: 150px;
+    padding-top: 200px;
+    width: 350%;
+  }
+}
+@media (min-width: 641px) and (max-width: 1007px) {
+  .serv-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #home .passport {
+    margin-left: 1050px;
+    padding-top: 200px;
+    width: 350%;
   }
 }
