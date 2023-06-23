@@ -34,12 +34,12 @@ const About = () => {
       <Flex wrap={"wrap"}>
         <Box w={{ base: "80%", md: "40%" }} p="20px" m={"auto"} minW={"300px"}>
           <Image
-            w="60%"
+            w="70%"
             borderRadius={"60%"}
             src={Profile}
             m="auto"
             transition="width 0.3s ease-in-out"
-            _hover={{ width: "65%", cursor: "pointer" }}
+            _hover={{ width: "75%", cursor: "pointer" }}
             className="home-img"
           />
           {/* <Image w={"80%"} src='https://thumbs.gfycat.com/ColorlessBitesizedKob-max-1mb.gif'/> */}

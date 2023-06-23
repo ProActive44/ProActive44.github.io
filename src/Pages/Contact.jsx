@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   const handleCall = () => {
-    window.location.href = "tel:7020162627";
+    window.location.href = "tel:9764584028";
   };
 
   const handleEmail = () => {
