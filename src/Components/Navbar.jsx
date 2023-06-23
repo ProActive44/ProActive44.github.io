@@ -67,7 +67,7 @@ const Navbar = () => {
           align={"center"}
           justify="right"
           mx={"20px"}
-          gap={"20px"}
+          gap={"30px"}
           h="100%"
           display={{ base: "none", md: "flex" }}
           //   border={"1px solid red"}
