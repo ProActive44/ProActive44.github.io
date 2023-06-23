@@ -14,9 +14,9 @@ import { FaDownload } from "react-icons/fa";
 const About = () => {
   const downloadResume = () => {
     const previewUrl =
-      "https://drive.google.com/file/d/1nxEcOMkg9l17Delnv811tk54dv1tkc_k/view?usp=sharing";
+      "https://drive.google.com/file/d/1vxcfhWu8juQjYwB5zQZwohfOfxgZ_DBt/view?usp=sharing";
     const downloadUrl =
-      "https://www.dropbox.com/s/wugaticm4yhrmvw/Prasad%20Mhaske%20CV%20Resume.pdf?dl=1";
+      "https://www.dropbox.com/s/9bk363guzbvkzmw/Prasad-Mhaske-Resume.pdf?dl=1";
 
     window.open(previewUrl, "_blank");
     window.location.href = downloadUrl;
