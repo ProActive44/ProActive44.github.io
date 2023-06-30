@@ -20,16 +20,16 @@ const ProjectCard = ({ project }) => {
   });
 
   const handleImageHover = (e) => {
-    const { width, height, left, top } = e.target.getBoundingClientRect();
+    // const { width, height, left, top } = e.target.getBoundingClientRect();
 
-    const offsetX = (width - e.nativeEvent.offsetX) / width;
-    const offsetY = (height - e.nativeEvent.offsetY) / height;
+    // const offsetX = (width - e.nativeEvent.offsetX) / width;
+    // const offsetY = (height - e.nativeEvent.offsetY) / height;
 
-    const translateX = (width / 2 - left) * (1 - offsetX);
-    const translateY = (height / 2 - top) * (1 - offsetY);
+    // const translateX = (width / 2 - left) * (1 - offsetX);
+    // const translateY = (height / 2 - top) * (1 - offsetY);
 
     setIsImageHovered(true);
-    setTranslateValues({ translateX, translateY });
+    // setTranslateValues({ translateX, translateY });
   };
 
   const handleImageLeave = () => {
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
           borderRadius="20px"
           transform={
             isImageHovered
-              ? `scale(1.4) translate(${translateValues.translateX}px, ${translateValues.translateY}px)`
+              ? `scale(1.2) translate(${translateValues.translateX}px, ${translateValues.translateY}px)`
               : "scale(1)"
           }
           position={"relative"}

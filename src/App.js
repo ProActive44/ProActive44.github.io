@@ -10,7 +10,7 @@ import Navbar from "./Components/Navbar";
 
 function App() {
   return (
-    <Box className="App" maxW={"1366px"} m={"auto"} overflow={'hidden'}>
+    <Box className="App" maxW={"1366px"} m={"auto"}>
       <Navbar />
       <Home />
       <About />
