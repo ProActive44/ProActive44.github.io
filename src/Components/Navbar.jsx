@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const downloadResume = () => {
     const previewUrl =
-      "https://drive.google.com/file/d/1vxcfhWu8juQjYwB5zQZwohfOfxgZ_DBt/view?usp=sharing";
+      "https://drive.google.com/file/d/1wPzLgc1k68R3KxX1quVGXXFRabgqO6O8/view?usp=sharing";
     const downloadUrl =
       "https://www.dropbox.com/s/9bk363guzbvkzmw/Prasad-Mhaske-Resume.pdf?dl=1";
 
