@@ -57,7 +57,7 @@ const Projects = () => {
       </Heading>
       <Box>
         {projectArray.map((project, idx) => {
-          return <ProjectCard project={project} />;
+          return <ProjectCard project={project} key={idx}/>;
         })}
       </Box>
     </section>

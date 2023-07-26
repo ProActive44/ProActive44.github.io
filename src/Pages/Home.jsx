@@ -4,8 +4,8 @@ import TypeWriter from "../Components/TypeScript";
 
 const Home = () => {
   return (
-    <section class="home" id="home">
-      <div class="max-width">
+    <section className="home" id="home">
+      <div className="max-width">
         <Box>
           <Flex wrap={"wrap"}>
             <Box

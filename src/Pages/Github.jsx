@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import GitHubCalendar from "github-calendar"; // Import the GitHubCalendar function
+// import GitHubCalendar from "github-calendar"; // Import the GitHubCalendar function
+import GitHubCalendar from "react-github-calendar"; // Import the GitHubCalendar tag
 import { Box, Flex, Heading } from "@chakra-ui/react";
 
 const Github = () => {
   useEffect(() => {
-    GitHubCalendar(".calendar", "ProActive44", { responsive: true });
+    // GitHubCalendar(".calendar", "ProActive44", { responsive: true });  // Function
   }, []);
 
   return (
@@ -24,15 +25,17 @@ const Github = () => {
         >
           Github
         </Heading>
-        <div
-          className="github-calender react-activity-calendar"
-          style={{ backgroundColor: "#575656", color: "#00d5ff" }}
+        <Flex
+          // className="github-calender react-activity-calendar"
+          // style={{ backgroundColor: "#575656", color: "#00d5ff" }}
+          style={{ color: "#00d5ff" }}
         >
-          <Box className="calendar" p="10px">
+          <Box className="calendar" p="20px" bg={"#575656"} border={"none"}>
             {/* Loading stuff */}
-            Loading the data just for you.
+            <GitHubCalendar username="ProActive44" colorScheme="light" />
+            {/* Loading the data just for you. */}
           </Box>
-        </div>
+        </Flex>
 
         {/* git stack */}
         <Flex id="github-stack" wrap={"wrap"}>
