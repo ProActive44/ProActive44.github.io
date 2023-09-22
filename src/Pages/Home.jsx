@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <div className="max-width">
-        <Box>
+        <Box> 
           <Flex wrap={"wrap"}>
             <Box
               w={{ base: "100%", lg: "50%" }}

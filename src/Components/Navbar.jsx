@@ -43,7 +43,6 @@ const Navbar = () => {
     <>
       <Box
         id="nav-menu"
-        maxW={"100%"}
         bg={"rgb(28,28,28)"}
         h={{ base: "55px", md: "65px" }}
         position={"sticky"}
@@ -70,7 +69,6 @@ const Navbar = () => {
           gap={"30px"}
           h="100%"
           display={{ base: "none", md: "flex" }}
-          //   border={"1px solid red"}
         >
           <Link
             sx={{ "&:hover": { color: "red" }, fontSize: "lg" }}

@@ -439,6 +439,7 @@ footer {
     padding-top: 200px;
     width: 350%;
   }
+
 }
 @media (min-width: 641px) and (max-width: 1007px) {
   .serv-content {
@@ -450,4 +451,5 @@ footer {
     padding-top: 200px;
     width: 350%;
   }
+  
 }
