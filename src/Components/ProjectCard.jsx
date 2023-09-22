@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
               : "scale(1)"
           }
           position={"relative"}
-          zIndex={isImageHovered?"20":"10"}
+          zIndex={isImageHovered ? "20" : "10"}
           cursor={"pointer"}
           transition="transform 0.3s ease"
         />

@@ -63,10 +63,6 @@ const Contact = () => {
             <Text color={"blue.500"}>prasadmhaske2001@gmail.com</Text>
           </Box>
         </Tooltip>
-        {/* <Box id="contact-location">
-          <Image src={Location} />
-          <Heading>Location</Heading>
-        </Box> */}
       </Flex>
     </Box>
   );

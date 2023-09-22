@@ -14,7 +14,7 @@ import { FaDownload } from "react-icons/fa";
 const About = () => {
   const downloadResume = () => {
     const previewUrl =
-      "https://drive.google.com/file/d/1vxcfhWu8juQjYwB5zQZwohfOfxgZ_DBt/view?usp=sharing";
+      "https://drive.google.com/file/d/1wPzLgc1k68R3KxX1quVGXXFRabgqO6O8/view?usp=sharing";
     const downloadUrl =
       "https://www.dropbox.com/s/9bk363guzbvkzmw/Prasad-Mhaske-Resume.pdf?dl=1";
 
@@ -32,14 +32,23 @@ const About = () => {
         About Me
       </Heading>
       <Flex wrap={"wrap"}>
-        <Box w={{ base: "80%", md: "40%" }} p="20px" m={"auto"} minW={"300px"}>
+        <Box
+          w={{ base: "80%", md: "40%" }}
+          p="20px"
+          m={"auto"}
+          minW={"300px"}
+          position={"relative"}
+        >
           <Image
             w="70%"
             borderRadius={"60%"}
             src={Profile}
             m="auto"
             transition="width 0.3s ease-in-out"
-            _hover={{ width: "75%", cursor: "pointer" }}
+            cursor="pointer"
+            position={"absolute"}
+            inset={"0"}
+            _hover={{ width: "80%" }}
             className="home-img"
           />
           {/* <Image w={"80%"} src='https://thumbs.gfycat.com/ColorlessBitesizedKob-max-1mb.gif'/> */}

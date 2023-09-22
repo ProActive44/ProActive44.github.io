@@ -12,6 +12,7 @@ import Netlify from "../Images/Netlify.png";
 import git from "../Images/git.png";
 import Github from "../Images/Github.png";
 import Vscode from "../Images/Vscode.png";
+import Tailwind from "../Images/Tailwind.png";
 
 const Skills = () => {
   return (
@@ -101,8 +102,15 @@ const Skills = () => {
             </Box>
 
             <Box className="skills-card">
-              <Image className="skills-card-img" src={Netlify} />
-              <Text className="skills-card-name">Netlify</Text>
+              <Image className="skills-card-img" src={Tailwind} />
+              <Text className="skills-card-name">Tailwind</Text>
+            </Box>
+            <Box className="skills-card">
+              <Image
+                className="skills-card-img"
+                src="https://chakra-ui.com/favicon.png"
+              />
+              <Text className="skills-card-name">Chakra UI</Text>
             </Box>
           </Flex>
         </Box>

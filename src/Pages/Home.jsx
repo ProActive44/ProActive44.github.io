@@ -16,12 +16,12 @@ const Home = () => {
             >
               <Stack>
                 <Heading>
-                  <Text fontFamily={"Courgette, cursive"} color="orange">
+                  <Text fontFamily={"Courgette, cursive"} color="red">
                     I'm Prasad Mhaske!
                   </Text>
                 </Heading>
                 <TypeWriter />
-                <Text my={"20px"} color={"red.500"}>
+                <Text my={"20px"} color={"yellow"}>
                   "Passionate Full Stack Web Developer with a specialization in
                   the MERN Stack. Skilled, collaborative, and attentive
                   developer with a drive to develop the most relevant products.

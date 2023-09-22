@@ -25,6 +25,18 @@ body {
   background-attachment: fixed;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+  cursor: pointer;
+  user-select: none;
+}
+
 .favicon {
   border-radius: 50%;
 }
@@ -161,8 +173,8 @@ footer {
 #contact-phone:hover,
 #contact-email:hover,
 #contact-location:hover {
-  background-color: rgb(190, 181, 181);
-  color: rgb(238, 73, 73);
+  background-color: rgb(223, 223, 216);
+  color: rgb(73, 56, 56);
 }
 
 #contact-github img,
