@@ -112,10 +112,10 @@ const Navbar = () => {
             // className="nav-link resume"
             id="resume-button-1"
             transition="transform 0.3s ease-in-out"
-              _hover={{
-                transform: "translateY(-3px)",
-                color: "green.500",
-              }}
+            _hover={{
+              transform: "translateY(-3px)",
+              color: "green.500",
+            }}
           >
             RESUME
             <Box as="span" mx="5px">
@@ -202,6 +202,11 @@ const Navbar = () => {
                 className="nav-link resume"
                 id="resume-button-2"
                 w="100%"
+                transition="transform 0.3s ease-in-out"
+                _hover={{
+                  transform: "translateY(-3px)",
+                  color: "green.500",
+                }}
               >
                 RESUME
                 <Box as="span" mx="5px">

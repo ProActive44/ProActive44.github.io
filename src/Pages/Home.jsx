@@ -1,29 +1,12 @@
 import { Box, Image, Flex, Text, Heading, Stack } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
 import TypeWriter from "../Components/TypeScript";
 
 const Home = () => {
-  const [floatingPosition, setFloatingPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    const div = document.querySelector(".floating-div");
-
-    if (div) {
-      const { left, top, width, height } = div.getBoundingClientRect();
-      const offsetX = e.clientX - left - width / 2; // Adjust for element width/height
-      const offsetY = e.clientY - top - height / 2; // Adjust for element width/height
-
-      setFloatingPosition({ x: offsetX, y: offsetY });
-    }
-  };
-
-  const resetPosition = () => {
-    setFloatingPosition({ x: 0, y: 0 });
-  };
+ 
   return (
     <section className="home" id="home">
       <div className="max-width">
-        <Box onMouseMove={handleMouseMove} onMouseLeave={resetPosition}>
+        <Box>
           <Flex wrap={"wrap"}>
             <Box
               w={{ base: "100%", lg: "50%" }}
@@ -34,12 +17,13 @@ const Home = () => {
               <Stack>
                 <Heading>
                   <Text
-                    className="floating-div"
                     style={{
                       fontFamily: "Courgette, cursive",
                       color: "red",
-                      transform: `translate(${floatingPosition.x}px, ${floatingPosition.y}px)`,
-                      transition: "transform 0.1s ease-in-out",
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    _hover={{
+                      transform: `translateY(-10px)`,
                     }}
                   >
                     I'm Prasad Mhaske!

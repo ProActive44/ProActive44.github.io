@@ -23,6 +23,7 @@ body {
   background-color: #e0eff8;
   background-size: cover;
   background-attachment: fixed;
+  cursor: url("./Images/banana.png") !important;
 }
 
 p,
@@ -55,7 +56,7 @@ img {
   /* border-bottom: 2px solid rgb(253, 99, 99); */
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   position: relative;
 }
@@ -72,6 +73,11 @@ img {
   transition: width 0.3s ease-in-out;
 }
 
+.resume::before,
+.resume::after{
+  height: 0;
+}
+
 .nav-link::before {
   left: 50%;
   transform: translateX(-50%);
@@ -86,8 +92,6 @@ img {
 .nav-link:hover::after {
   width: 100%;
 }
-
-
 
 .menu-btn {
   color: black;
@@ -477,7 +481,6 @@ footer {
     padding-top: 200px;
     width: 350%;
   }
-
 }
 @media (min-width: 641px) and (max-width: 1007px) {
   .serv-content {
@@ -489,5 +492,51 @@ footer {
     padding-top: 200px;
     width: 350%;
   }
-  
+}
+
+/* Fixed div styling */
+
+.fixed-div {
+  position: fixed;
+  z-index: 20;
+  border-radius: 0 20px 20px 0;
+  bottom: 10px;
+  left: -100%; /* Initially off-screen to the left */
+  /* backface-visibility: hidden; Added to improve smoothness in Firefox */
+  background-color: #3f403f;
+  font-size: x-large;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px; /* Set your desired width */
+  animation: slide-in 0.3s forwards; /* Animation for sliding in from left */
+}
+
+.message {
+  margin-right: 10px;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Hide the floating, fixed div and its contents on small screens */
+@media (max-width: 768px) {
+  .floating-div {
+    display: none; 
+  }
+  .fixed-div {
+    display: none;
+  }
 }
