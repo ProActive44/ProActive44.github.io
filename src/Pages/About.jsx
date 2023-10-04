@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <section id="about" className="about section">
-      <Box mt={{base:"5rem",sm:'10rem',md:"20rem",lg:'1rem'}}>
+      <Box mt={{ base: "5rem", sm: "10rem", md: "20rem", lg: "1rem" }}>
         <Heading
           color="orange"
           my={"20px"}
@@ -64,12 +64,18 @@ const About = () => {
             <Stack>
               <Text>
                 Hi, my name is
+                <br />
                 <Text
                   as="p"
                   color={"blue.500"}
                   fontFamily={"Courgette, cursive"}
                   id="user-detail-name"
                   fontSize={"xl"}
+                  transition="transform 0.3s ease-in-out"
+                  _hover={{
+                    transform: "translateY(-5px) translateX(10px)",
+                  }}
+                  display={"inline-block"}
                 >
                   Prasad Babasaheb Mhaske.
                 </Text>
@@ -102,10 +108,16 @@ const About = () => {
               onClick={downloadResume}
               id="resume-button-2"
               variant={"outline"}
-              mt={"10px"}
+              mt={"15px"}
+              transition="transform 0.3s ease-in-out"
+              _hover={{
+                transform: "translateY(-5px)",
+                // bg:'blue.500',
+                color: "yellow",
+              }}
             >
               {/* <a href="../Images/PrasadResume.pdf" target="_blank" download="PrasadResume.pdf" id="resume-link-2">Resume</a> */}
-              Resume
+              RESUME
               <Box as="span" mx="5px">
                 <FaDownload />
               </Box>

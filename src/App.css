@@ -48,8 +48,46 @@ img {
 }
 
 .nav-link:hover:not(.resume) {
-  color: rgb(253, 99, 99);
+  /* color: rgb(253, 99, 99); */
+  transition: transform 0.3s ease-in-out;
+  /* transform: translateY(-5px); */
+  /* margin-bottom: 5px; */
+  /* border-bottom: 2px solid rgb(253, 99, 99); */
 }
+
+.nav-link{
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  /* margin-top: 5px; */
+  background-color: rgb(253, 99, 99);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
 
 .menu-btn {
   color: black;

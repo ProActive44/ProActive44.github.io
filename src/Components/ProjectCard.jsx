@@ -77,7 +77,10 @@ const ProjectCard = ({ project }) => {
           className="project-title"
           size={"lg"}
           color={"red.500"}
-          align={"left"}
+          align={"left"}transition="transform 0.3s ease-in-out"
+          _hover={{
+            transform: "translateY(-5px) translateX(10px)",
+          }}
         >
           {title}
         </Heading>
