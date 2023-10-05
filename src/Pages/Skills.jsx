@@ -8,11 +8,12 @@ import Node from "../Images/Node.png";
 import Express from "../Images/ExpressJs.png";
 import JAVA from "../Images/JAVA.png";
 import Postman from "../Images/Postman.png";
-import Netlify from "../Images/Netlify.png";
+// import Netlify from "../Images/Netlify.png";
 import git from "../Images/git.png";
 import Github from "../Images/Github.png";
 import Vscode from "../Images/Vscode.png";
 import Tailwind from "../Images/Tailwind.png";
+import mongoDB from "../Images/mongoDB.png";
 
 const Skills = () => {
   return (
@@ -61,7 +62,7 @@ const Skills = () => {
             <Box className="skills-card">
               <Image
                 className="skills-card-img"
-                src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+                src={mongoDB}
               />
               <Text className="skills-card-name">Mongo DB</Text>
             </Box>
