@@ -8,6 +8,7 @@ import Node from "../Images/Node.png";
 import Express from "../Images/ExpressJs.png";
 import Live from "../Images/Live.png";
 import Github from "../Images/Github.png";
+import MongoDB from "../Images/mongoDB.png";
 
 const ProjectCard = ({ project }) => {
   const { image, title, description, githubURL, liveURL, backend, react } =
@@ -77,7 +78,8 @@ const ProjectCard = ({ project }) => {
           className="project-title"
           size={"lg"}
           color={"red.500"}
-          align={"left"}transition="transform 0.3s ease-in-out"
+          align={"left"}
+          transition="transform 0.3s ease-in-out"
           _hover={{
             transform: "translateY(-5px) translateX(10px)",
           }}
@@ -128,10 +130,7 @@ const ProjectCard = ({ project }) => {
                 <Text className="skills-card-name">Node JS</Text>
               </Box>
               <Box className="skills-card-Project">
-                <Image
-                  className="skills-card-img"
-                  src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
-                />
+                <Image className="skills-card-img" src={MongoDB} />
                 <Text className="skills-card-name">Mongo DB</Text>
               </Box>
               <Box className="skills-card-Project">
