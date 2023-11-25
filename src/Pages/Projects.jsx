@@ -63,7 +63,7 @@ const Projects = () => {
       <Box color="orange" my={"30px"} fontFamily="Architects Daughter, cursive" fontWeight={'extrabold'} fontSize={'xl'}>
         <h1>
           To discover more of my projects, please feel free to check out my{" "}
-          <a href="https://github.com/ProActive44" style={{color:'rgb(96, 71, 238)'}} >GitHub portfolio  </a>
+          <a href="https://github.com/ProActive44" style={{color:'rgb(96, 71, 238)'}} >GitHub profile  </a>
           . . .
         </h1>
       </Box>
