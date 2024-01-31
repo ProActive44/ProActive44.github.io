@@ -82,10 +82,10 @@ const About = () => {
                 <Text>
                   I am from Ahmednagar, Maharashtra. I have completed my
                   Bachelor of Science (BSc) from K.J.S. College, Kopergaon.
-                  Recently, I have completed a Full Stack Web Development course
-                  from{" "}
-                  <Text as={"span"} color={"blue.500"}>
-                    Masai School.
+                  Currently, I am pursuing a Master of Computer Applications (MCA) from Uttaranchal University. 
+                  Recently, I completed a Full Stack Web Development course from
+                  <Text as={"span"} color={"blue.500"} px={'5px'}>
+                  Masai School.
                   </Text>
                 </Text>
               </Text>
