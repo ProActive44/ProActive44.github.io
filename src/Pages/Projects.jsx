@@ -37,7 +37,7 @@ const projectArray = [
   {
     title: "My Portfolio",
     description:
-      "This is My portfolio, showcasing my skills, accomplishments, and creative journey. This portfolio is a testament to my passion for developement and my dedication to honing my craft.",
+      "This is My portfolio, showcasing my skills, accomplishments, and creative journey.",
     image: Portfolio,
     githubURL: "https://github.com/ProActive44/ProActive44.github.io",
     liveURL: "https://proactive44.github.io",
