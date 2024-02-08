@@ -13,6 +13,7 @@ import minion from "./Images/minion.png";
 function App() {
   const [showFixedDiv, setShowFixedDiv] = useState(false);
   const [showMinion, setShowMinion] = useState(true);
+  const [floatingPosition, setFloatingPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,31 +24,16 @@ function App() {
   const toggleFixedDiv = () => {
     setShowFixedDiv(!showFixedDiv);
   };
+
   const toggleMinion = () => {
     setShowMinion(!showMinion);
   };
 
-  const [floatingPosition, setFloatingPosition] = useState({ x: 0, y: 0 });
-
   const handleMouseMove = (e) => {
-    const div = document.querySelector(".floating-div");
+    const offsetX = e.clientX; // Get cursor X position
+    const offsetY = e.clientY; // Get cursor Y position
 
-    if (div) {
-      const { left, top } = div.getBoundingClientRect();
-      const offsetX = e.clientX - left; // Adjust for element position
-      const offsetY = e.clientY - top; // Adjust for element position
-
-      // Apply damping to cursor movement
-      const dampingFactor = 0.1; // Adjust this value as needed for smoother movement
-      const dampedX = offsetX - (offsetX - floatingPosition.x) * dampingFactor;
-      const dampedY = offsetY - (offsetY - floatingPosition.y) * dampingFactor;
-
-      setFloatingPosition({ x: dampedX, y: dampedY });
-    }
-  };
-
-  const resetPosition = () => {
-    setFloatingPosition({ x: 0, y: 0 });
+    setFloatingPosition({ x: offsetX, y: offsetY });
   };
 
   return (
@@ -57,7 +43,6 @@ function App() {
       m={"auto"}
       position={"relative"}
       onMouseMove={handleMouseMove}
-      onMouseLeave={resetPosition}
     >
       <Navbar />
       <Home />
@@ -74,8 +59,9 @@ function App() {
           w={10}
           className="floating-div"
           style={{
-            transform: `translate(${floatingPosition.x}px, ${floatingPosition.y}px)`,
-            transition: "transform 0.1s ease-in-out",
+            left: `${floatingPosition.x}px`, // Set left position
+            top: `${floatingPosition.y}px`, // Set top position
+            transition: "left 5s, top 0.1s", // Apply transition
           }}
           backfaceVisibility="hidden"
         >
