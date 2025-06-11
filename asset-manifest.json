@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.05f0585c.css",
-    "main.js": "/static/js/main.b8326f47.js",
+    "main.css": "/static/css/main.a0f7296d.css",
+    "main.js": "/static/js/main.e53bebf0.js",
     "static/js/787.80dcc00f.chunk.js": "/static/js/787.80dcc00f.chunk.js",
     "static/media/minion.png": "/static/media/minion.be49bb5e1a682c69ffc8.png",
     "static/media/Specialized.png": "/static/media/Specialized.9bde43ba1150acab1fcd.png",
@@ -19,18 +19,21 @@
     "static/media/CSS.png": "/static/media/CSS.1334cb45a7d5ad096543.png",
     "static/media/JavaScript.png": "/static/media/JavaScript.166865dacb77d214f485.png",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.a97cf4afc51c808f80d3.png",
+    "static/media/Typescript.png": "/static/media/Typescript.4b5fbb860aba7327c965.png",
     "static/media/Node.png": "/static/media/Node.85fedea58efe86438f00.png",
     "static/media/git.png": "/static/media/git.dfdd0989ffe0184bdd68.png",
     "static/media/ExpressJs.png": "/static/media/ExpressJs.39a0f4c3d981885c64f8.png",
+    "static/media/ChakraUI.png": "/static/media/ChakraUI.9132f0faa65f24438cfb.png",
     "static/media/mongoDB.png": "/static/media/mongoDB.91f15241e98fa5f1a61d.png",
     "static/media/Vscode.png": "/static/media/Vscode.c10cf3d205c846858641.png",
+    "static/media/NextJS.webp": "/static/media/NextJS.8ffdb50c46a6eb5ba39b.webp",
     "index.html": "/index.html",
-    "main.05f0585c.css.map": "/static/css/main.05f0585c.css.map",
-    "main.b8326f47.js.map": "/static/js/main.b8326f47.js.map",
+    "main.a0f7296d.css.map": "/static/css/main.a0f7296d.css.map",
+    "main.e53bebf0.js.map": "/static/js/main.e53bebf0.js.map",
     "787.80dcc00f.chunk.js.map": "/static/js/787.80dcc00f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05f0585c.css",
-    "static/js/main.b8326f47.js"
+    "static/css/main.a0f7296d.css",
+    "static/js/main.e53bebf0.js"
   ]
 }
