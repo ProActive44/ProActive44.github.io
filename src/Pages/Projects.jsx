@@ -3,8 +3,10 @@ import React from "react";
 import ProjectCard from "../Components/ProjectCard";
 import Specialized from "../Images/Specialized.png";
 import TATA1MG from "../Images/TATA1MG.png";
-import Skinstore from "../Images/Skinstore.png";
+// import Skinstore from "../Images/Skinstore.png";
 import Portfolio from "../Images/Portfolio.png";
+import GreenSteps from "../Images/GreenSteps.png";
+
 
 const projectArray = [
   {
@@ -14,6 +16,7 @@ const projectArray = [
     image: Specialized,
     githubURL: "https://github.com/ProActive44/specialized-bike-app",
     liveURL: "https://specializedstore.vercel.app",
+    basic: false,
     react: true,
     backend: true,
   },
@@ -24,15 +27,20 @@ const projectArray = [
     image: TATA1MG,
     githubURL: "https://github.com/ProActive44/TATA-1mg-clone",
     liveURL: "https://tata-1mg-store.netlify.app",
+    basic: true,
     backend: true,
   },
   {
-    title: "Skinstore",
+    title: "GreenSteps",
     description:
-      "The clone of an American site Skinstore, It is one of the world's leading cosmetics ecommerce shopping sites.",
-    image: Skinstore,
-    githubURL: "https://github.com/anuragbhardwaj21/Skinstore",
-    liveURL: "https://skinstoreclone44.netlify.app",
+      "GreenSteps is a behavior-first platform that encourages eco-friendly habits through daily logging, visual environmental impact tracking, and gamified reward systems.",
+    image: GreenSteps,
+    githubURL: "https://github.com/ProActive44/Greensteps01",
+    liveURL: "https://greensteps01.vercel.app/",
+    basic: false,
+    next: true, 
+    tailwind: true, 
+    backend: true
   },
   {
     title: "My Portfolio",
@@ -41,6 +49,7 @@ const projectArray = [
     image: Portfolio,
     githubURL: "https://github.com/ProActive44/ProActive44.github.io",
     liveURL: "https://proactive44.github.io",
+    basic: true,
     react: true,
   },
 ];

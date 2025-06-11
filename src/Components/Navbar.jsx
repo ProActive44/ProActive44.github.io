@@ -17,7 +17,8 @@ const Navbar = () => {
     const previewUrl =
       "https://drive.google.com/file/d/10vpbWJnst7YB_wK2xzFs0dvDKpD7T0g_/view?usp=sharing";
     const downloadUrl =
-      "https://www.dropbox.com/scl/fi/8lz6cq319657kxo54x0yg/Prasad-Mhaske-Resume.pdf?dl=1"
+      // "https://www.dropbox.com/scl/fi/8lz6cq319657kxo54x0yg/Prasad-Mhaske-Resume.pdf?dl=1"
+      "https://www.dropbox.com/scl/fi/lp03mticp8vst4bsxw5si/Prasad-Mhaske-pw09_141.pdf?dl=1";
 
     window.open(previewUrl, "_blank");
     window.location.href = downloadUrl;

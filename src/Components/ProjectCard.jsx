@@ -9,9 +9,11 @@ import Express from "../Images/ExpressJs.png";
 import Live from "../Images/Live.png";
 import Github from "../Images/Github.png";
 import MongoDB from "../Images/mongoDB.png";
+import NextJS from "../Images/NextJS.webp";
+import Tailwind from "../Images/Tailwind.png";
 
 const ProjectCard = ({ project }) => {
-  const { image, title, description, githubURL, liveURL, backend, react } =
+  const { image, title, description, githubURL, liveURL, backend, react, next, tailwind, basic } =
     project;
 
   const [isImageHovered, setIsImageHovered] = useState(false);
@@ -105,6 +107,7 @@ const ProjectCard = ({ project }) => {
         </Text>
 
         <Flex className="flex" gap={"5px"} my={"5px"} wrap={"wrap"}>
+          {basic && <>
           <Box className="skills-card-Project">
             <Image className="skills-card-img" src={HTML} />
             <Text className="skills-card-name">HTML</Text>
@@ -117,12 +120,26 @@ const ProjectCard = ({ project }) => {
             <Image className="skills-card-img" src={JavaScript} />
             <Text className="skills-card-name">JavaScript</Text>
           </Box>
+          </>}
           {react && (
             <Box className="skills-card-Project">
               <Image className="skills-card-img" src={reactImg} />
               <Text className="skills-card-name">React</Text>
             </Box>
           )}
+          {next && (
+            <Box className="skills-card-Project">
+              <Image className="skills-card-img" src={NextJS} />
+              <Text className="skills-card-name">Next JS</Text>
+            </Box>
+          )}
+          {tailwind && (
+            <Box className="skills-card-Project">
+              <Image className="skills-card-img" src={Tailwind} />
+              <Text className="skills-card-name">Tailwind</Text>
+            </Box>
+          )}
+          
           {backend && (
             <>
               <Box className="skills-card-Project">

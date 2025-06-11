@@ -3,7 +3,9 @@ import React from "react";
 import HTML from "../Images/HTML.png";
 import CSS from "../Images/CSS.png";
 import JavaScript from "../Images/JavaScript.png";
+import TypeScript from "../Images/Typescript.png";
 import react from "../Images/React.png";
+import NextJS from "../Images/NextJS.webp";
 import Node from "../Images/Node.png";
 import Express from "../Images/ExpressJs.png";
 import JAVA from "../Images/JAVA.png";
@@ -14,6 +16,7 @@ import Github from "../Images/Github.png";
 import Vscode from "../Images/Vscode.png";
 import Tailwind from "../Images/Tailwind.png";
 import mongoDB from "../Images/mongoDB.png";
+import chakraUI from "../Images/ChakraUI.png";
 
 const Skills = () => {
   return (
@@ -45,8 +48,16 @@ const Skills = () => {
               <Text className="skills-card-name">JavaScript</Text>
             </Box>
             <Box className="skills-card">
+              <Image className="skills-card-img" src={TypeScript} />
+              <Text className="skills-card-name">TypeScript</Text>
+            </Box>
+            <Box className="skills-card">
               <Image className="skills-card-img" src={react} />
-              <Text className="skills-card-name">React</Text>
+              <Text className="skills-card-name">React JS</Text>
+            </Box>
+            <Box className="skills-card">
+              <Image className="skills-card-img" src={NextJS} />
+              <Text className="skills-card-name">Next JS</Text>
             </Box>
           </Flex>
         </Box>
@@ -68,7 +79,7 @@ const Skills = () => {
             </Box>
             <Box className="skills-card">
               <Image className="skills-card-img" src={Express} />
-              <Text className="skills-card-name">Express</Text>
+              <Text className="skills-card-name">Express JS</Text>
             </Box>
           </Flex>
         </Box>
@@ -109,7 +120,7 @@ const Skills = () => {
             <Box className="skills-card">
               <Image
                 className="skills-card-img"
-                src="https://chakra-ui.com/favicon.png"
+                src={chakraUI}
               />
               <Text className="skills-card-name">Chakra UI</Text>
             </Box>

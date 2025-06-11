@@ -51,40 +51,40 @@ function App() {
       <Github />
       <Projects />
       <Contact />
-      {showMinion && (
-        <Box
-          position={"fixed"}
-          top={0}
-          zIndex={1000}
-          w={10}
-          className="floating-div"
-          style={{
-            left: `${floatingPosition.x}px`, // Set left position
-            top: `${floatingPosition.y}px`, // Set top position
-            transition: "left 5s, top 0.1s", // Apply transition
-          }}
-          backfaceVisibility="hidden"
-        >
-          <Image
-            src={minion}
-            transform="translate3d(0, 0, 0)"
-            onClick={() => {
-              alert(
-                "Hands off the minion! 😡 Only the bravest souls may approach this cuddly creature."
-              );
-              setShowFixedDiv(true);
-            }}
-          />
-        </Box>
-      )}
-      {showFixedDiv && showMinion && (
-        <div className="fixed-div">
-          <Button onClick={toggleMinion}>Go Away Minion</Button>
-          <div className="close-button" onClick={toggleFixedDiv}>
-            &times;
-          </div>
-        </div>
-      )}
+          {/* {showMinion && (
+            <Box
+              position={"fixed"}
+              top={0}
+              zIndex={1000}
+              w={10}
+              className="floating-div"
+              style={{
+                left: `${floatingPosition.x}px`, // Set left position
+                top: `${floatingPosition.y}px`, // Set top position
+                transition: "left 5s, top 0.1s", // Apply transition
+              }}
+              backfaceVisibility="hidden"
+            >
+              <Image
+                src={minion}
+                transform="translate3d(0, 0, 0)"
+                onClick={() => {
+                  alert(
+                    "Hands off the minion! 😡 Only the bravest souls may approach this cuddly creature."
+                  );
+                  setShowFixedDiv(true);
+                }}
+              />
+            </Box>
+          )}
+          {showFixedDiv && showMinion && (
+            <div className="fixed-div">
+              <Button onClick={toggleMinion}>Go Away Minion</Button>
+              <div className="close-button" onClick={toggleFixedDiv}>
+                &times;
+              </div>
+            </div>
+          )} */}
     </Box>
   );
 }
